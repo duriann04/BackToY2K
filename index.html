@@ -1,0 +1,370 @@
+<!DOCTYPE html>
+<html lang="zh-TW">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta http-equiv="X-UA-Compatible" content="ie=edge">
+  <title>Back to Y2K</title>
+  <link rel="canonical" href="https://www.letswrite.tw/custom-google-form/">
+
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/skeleton/2.0.4/skeleton.min.css">
+
+  
+  <!-- customized style -->
+  <style>
+    *, *::before, *::after {
+      box-sizing: border-box;
+      font-size: 16px;
+    }
+    @font-face {
+    font-family: 'openhuninn';
+    src: url('jf-openhuninn-2.0.ttf') format("truetype"),
+    }
+    html, body, .container, .row {
+      margin: 0;
+      padding: 0;
+      width: 100%;
+      height: 100%;
+      /* background-color: #aad2ff; */
+      background: linear-gradient(to right,  #c1deff, #d5bbff);
+      color: #39588B;
+      font-family: 'openhuninn';
+    }
+    .container {
+      max-width: 100%;
+    }
+    button {
+      font-size: 16px;
+    }
+
+    .half {
+      position: fixed;
+      margin: 0;
+      width: 50% !important;
+      height: 100%;
+    }
+    .bg {
+      background: url('y4.png') center center;
+      background-size: cover;
+    }
+    .titl{
+      text-align:center;
+    }
+    .form {
+      left: 50%;
+      overflow: auto;
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      flex-wrap: wrap;
+    }
+    hr{
+      border-color: #39588B;
+      border-width: 1.5px;
+    }
+    h1, form {
+      width: 100%;
+    }
+    h1 {
+      padding-top: 16px;
+      font-size: 35px;
+      text-align: center;
+      font-weight: bold;
+    }
+    h2{
+      font-size: 18px;
+      font-weight: bold;
+      text-align: center;
+    }
+    h3{
+      font-size: 16px;
+      font-weight: normal;
+      text-align: center;
+      margin-bottom: 30px;
+    }
+    p{
+      font-size: 18px;
+      text-align: center;
+    }
+    form {
+      margin-right: auto;
+      margin-left: auto;
+      max-width: 400px;
+    }
+    .input-group {
+      margin-bottom: 30px;
+    }
+    .u-full-width{
+      border-color: #39588B;
+      background-color: #f4f9ff;
+    }
+    .radio-group label {
+      display: inline-block;
+    }
+    textarea {
+      min-height: 100px;
+      resize: none;
+    }
+    textarea:focus{
+      border-color: #39588B;
+    }
+    select:focus{
+      border-color: #39588B;
+      color: #39588B;
+    }
+
+
+    @media screen and (max-width: 1024px) {
+      .half {
+        position: static;
+        width: 100% !important;
+        height: auto;
+      }
+      .bg {
+        height: 30vh;
+      }
+      form {
+        padding-right: 12px;
+        padding-left: 12px;
+      }
+    }
+    
+
+  </style>
+
+  <link rel="shortcut icon" href="bty.png"/>
+
+</head>
+<body>
+
+  <div class="container">
+    <main class="row">
+      <!-- bg -->
+      <section class="six columns half bg"></section>
+      
+      <!-- form -->
+      <section class="six columns half form">
+        <div class="titl">
+        <!-- <h1>Back to Y2K 展覽投票</h1> -->
+        <img src="btt.png" width="80%">
+        <img src="btp.png" width="80%">
+      </div>
+        <form>
+          <hr style="border-width: 2px;">
+          <!-- 學號 -->
+          <div class="input-group">
+            <label for="demo_name">學號*</label>
+            <input class="u-full-width" type="text" placeholder="例如：411730000" id="demo_name" onfocus="this.style.borderColor='#39588B'">
+          </div>
+          <hr>
+          <h2>第一個標準：主題契合度</h2>
+          <h3>你認為此次作品中<br>
+            「與策展主題契合度」最高的組別作品是哪組呢?</h3>
+          <!-- 第一個標準 -->
+          <div class="input-group">
+            <label for="demo_select1">1-1. 主題契合度：與策展主題相符度*</label>
+            <select class="u-full-width" id="demo_select1" >
+              <option value="0" value="0" selected disabled>請選擇</option>
+              <option value="1">第1組</option>
+              <option value="2">第2組</option>
+              <option value="3">第3組</option>
+              <option value="4">第4組</option>
+              <option value="5">第5組</option>
+              <option value="6">第6組</option>
+              <option value="7">第7組</option>
+              <option value="8">第8組</option>
+              <option value="9">第9組</option>
+              <option value="10">第10組</option>
+              <option value="11">第11組</option>
+              <option value="12">第12組</option>
+              <option value="13">第13組</option>
+              <option value="14">第14組</option>
+              <option value="15">第15組</option>
+              <option value="16">第16組</option>
+              <option value="17">第17組</option>
+              <option value="18">第18組</option>
+              <option value="19">第19組</option>
+            </select>
+          </div>
+
+          <!-- 1詢問內容 -->
+          <div class="input-group">
+            <label for="demo_textarea1">1-2. 承上題，為何選擇此組呢？</label>
+            <textarea class="u-full-width" id="demo_textarea1"></textarea>
+          </div>
+          <hr>
+          <h2>第二個標準 ：創意程度</h2>
+          <h3>你認為此次作品中<br>
+            「海報創意程度」最高的組別作品是哪組呢?</h3>
+          <!-- 第二個標準 -->
+          <div class="input-group">
+            <label for="demo_select2">2-1. 創意程度 ：原創性、素材特色性*</label>
+            <select class="u-full-width" id="demo_select2">
+              <option value="0" value="0" selected disabled>請選擇</option>
+              <option value="1">第1組</option>
+              <option value="2">第2組</option>
+              <option value="3">第3組</option>
+              <option value="4">第4組</option>
+              <option value="5">第5組</option>
+              <option value="6">第6組</option>
+              <option value="7">第7組</option>
+              <option value="8">第8組</option>
+              <option value="9">第9組</option>
+              <option value="10">第10組</option>
+              <option value="11">第11組</option>
+              <option value="12">第12組</option>
+              <option value="13">第13組</option>
+              <option value="14">第14組</option>
+              <option value="15">第15組</option>
+              <option value="16">第16組</option>
+              <option value="17">第17組</option>
+              <option value="18">第18組</option>
+              <option value="19">第19組</option>
+            </select>
+          </div>
+
+          <!-- 2詢問內容 -->
+          <div class="input-group">
+            <label for="demo_textarea2">2-2. 承上題，為何選擇此組呢？</label>
+            <textarea class="u-full-width" id="demo_textarea2"></textarea>
+          </div>
+          <hr>
+          <h2>第三個標準：整體美觀性</h2>
+          <h3>你認為此次作品中<br>
+            「海報整體美觀性」最高的組別作品是哪組呢?</h3>
+          <!-- 第三個標準 -->
+          <div class="input-group">
+            <label for="demo_select3">3-1. 整體美觀 ：海報整體色調與搭配*</label>
+            <select class="u-full-width" id="demo_select3">
+              <option value="0" value="0" selected disabled>請選擇</option>
+              <option value="1">第1組</option>
+              <option value="2">第2組</option>
+              <option value="3">第3組</option>
+              <option value="4">第4組</option>
+              <option value="5">第5組</option>
+              <option value="6">第6組</option>
+              <option value="7">第7組</option>
+              <option value="8">第8組</option>
+              <option value="9">第9組</option>
+              <option value="10">第10組</option>
+              <option value="11">第11組</option>
+              <option value="12">第12組</option>
+              <option value="13">第13組</option>
+              <option value="14">第14組</option>
+              <option value="15">第15組</option>
+              <option value="16">第16組</option>
+              <option value="17">第17組</option>
+              <option value="18">第18組</option>
+              <option value="19">第19組</option>
+            </select>
+          </div>
+
+          <!-- 3詢問內容 -->
+          <div class="input-group">
+            <label for="demo_textarea3">3-2. 承上題，為何選擇此組呢？</label>
+            <textarea class="u-full-width" id="demo_textarea3"></textarea>
+          </div>        
+          <hr>
+          <h2>第四個標準：人氣獎</h2>
+          <h3>你認為此次作品中<br>
+            「整體來說最喜歡」的作品是哪組呢?</h3>
+          <!-- 第四個標準 -->
+          <div class="input-group">
+            <label for="demo_select4">4-1. 整體美觀 ：海報整體色調與搭配*</label>
+            <select class="u-full-width" id="demo_select4">
+              <option value="0" value="0" selected disabled>請選擇</option>
+              <option value="1">第1組</option>
+              <option value="2">第2組</option>
+              <option value="3">第3組</option>
+              <option value="4">第4組</option>
+              <option value="5">第5組</option>
+              <option value="6">第6組</option>
+              <option value="7">第7組</option>
+              <option value="8">第8組</option>
+              <option value="9">第9組</option>
+              <option value="10">第10組</option>
+              <option value="11">第11組</option>
+              <option value="12">第12組</option>
+              <option value="13">第13組</option>
+              <option value="14">第14組</option>
+              <option value="15">第15組</option>
+              <option value="16">第16組</option>
+              <option value="17">第17組</option>
+              <option value="18">第18組</option>
+              <option value="19">第19組</option>
+            </select>
+          </div>
+
+          <!-- 4詢問內容 -->
+          <div class="input-group">
+            <label for="demo_textarea4">4-2. 承上題，為何選擇此組呢？</label>
+            <textarea class="u-full-width" id="demo_textarea4"></textarea>
+          </div> 
+          <hr>
+          <h2>感謝填答！不要忘了確認送出喔～</h2>
+
+
+          <!-- <a href="/1.html" target="_blank"> -->
+            <button type="button" id="submit" class="button-primary u-full-width" style="background-color: #fff4db; color: #39588B; border-color: #fef0cc;">確認送出</button>
+          <!-- </a> -->
+
+        </form>
+      </section>
+    </main>
+  </div>
+
+  <script src="https://code.jquery.com/jquery-3.3.1.min.js"></script>
+  <script>
+    $(function() {
+      $('#submit').on('click', function() {
+        
+        // 姓名
+        var name = $('#demo_name').val();
+
+        // 類別1
+        var who1 = $('#demo_select1').val();
+        var who2 = $('#demo_select2').val();
+        var who3 = $('#demo_select3').val();
+        var who4 = $('#demo_select4').val();
+
+        // 內容1
+        var msg1 = $('#demo_textarea1').val() || '未填寫';
+        var msg2 = $('#demo_textarea2').val() || '未填寫';
+        var msg3 = $('#demo_textarea3').val() || '未填寫';
+        var msg4 = $('#demo_textarea4').val() || '未填寫';
+
+        if (!name || !who1 || !who2 || !who3 || !who4) {
+          alert('學號及投票組別是必填的，請填寫完整。');
+          return;
+        }
+
+        // post
+        var data = {
+          'entry.1527590082': name,
+          'entry.204938226': who1,
+          'entry.164013441': msg1,
+          'entry.1576019468': who2,
+          'entry.180662586': msg2,
+          'entry.767297355': who3,
+          'entry.1916122388': msg3,
+          'entry.1884221392': who4,
+          'entry.104032604': msg4
+        };
+        $.ajax({
+          type: 'POST',
+          url: 'https://docs.google.com/forms/u/0/d/e/1FAIpQLSfpj2Yy3_0O9-aNhNF6YkVE4F3FTon-iOwqZPxoc40OEwFszw/formResponse',
+          data: data,
+          contentType: 'application/json',
+          dataType: 'jsonp',
+          complete: function() {
+            alert('資料已送出！');
+            window.location = "Y2K.html";
+          }
+        });
+        
+      });
+    });
+  </script>
+  
+</body>
+</html>
